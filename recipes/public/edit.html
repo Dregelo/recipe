@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Recipe App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link href="./styles/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>     
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">Recipes</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="row">
+        <div class="col-sm-12 col-md-6">
+            <div class="container">
+                <form>
+                    <label for="exampleFormControlTextarea1">Recipe Name:</label>
+                    <input type="text" name="name" id="nameInput" class="form-control form-control-lg shadow p-3 mb-5 bg-white rounded w-75 p-3" placeholder="name">
+                    
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Description:</label>
+                        <textarea class="form-control shadow p-3 mb-5 bg-white rounded w-75 p-3" name="description" id="descriptionInput" placeholder="description" rows="5"></textarea>
+                    </div>
+                    <label for="exampleFormControlTextarea1">Upload Image from URL:</label>
+                    <input type="text" name="img" id="imgInput" class="form-control form-control-lg shadow p-3 mb-5 bg-white rounded w-75 p-3"
+                        placeholder="IMG Url" />
+                    <label for="exampleFormControlTextarea1">
+                        <h4>Upload Image from Local Disk:</h4>
+                    </label>
+                    <input type="file" name="img" id="imgLocalInput" accept="image/*">
+                </form>
+                <div id="buttons">
+                    <button id="done" class="btn btn-success">Done</button>
+                    <button id="remove" class="btn btn-danger">Remove Recipe</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6"> 
+            <div class="container">
+                <div id="ingridientDiv" class="container">
+                    <label for="exampleFormControlTextarea1">Ingridients:</label>
+                    <form id ="addIngridientInput">
+                        <input type="text" name="ingridient" placeholder="Add Ingridient">
+                        <button id="addIngridient" class="btn btn-primary">Add Ingridient</button>
+                    </form>
+                    <div >
+                        <ul class="list-group list-group-flush" id="ingridients">
+                        </ul>
+                    </div>
+                </div>        
+            </div>
+        </div>
+    </div>
+    
+    
+       
+   
+    
+        
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="/scripts/edit-bundle.js"></script>
+</body>
+
+</html>
